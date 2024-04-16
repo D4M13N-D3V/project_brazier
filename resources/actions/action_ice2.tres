@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://bbqy2r5r4o6bo"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_4yf85"]
+
+[resource]
+script = ExtResource("1_4yf85")
+id = 12
+name = "Ice II"
+damage = 5
+type = 1
+damage_type = 3
+description = "Deals 5 Ice damage to target."
+source_animation = ""
+target_animation = ""

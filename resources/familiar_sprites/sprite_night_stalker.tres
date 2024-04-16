@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://c3pxqryo65jjv"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_m0g5t"]
+[ext_resource type="Texture2D" uid="uid://br68jbrn22uaw" path="res://thirdparty/sprites/Animations/Werewolf Stalker/WerewolfStalkerIdleSide.png" id="2_g17wk"]
+
+[resource]
+script = ExtResource("1_m0g5t")
+sprite_texture = ExtResource("2_g17wk")
+horizontal_frames = 4
+vertical_frames = 1

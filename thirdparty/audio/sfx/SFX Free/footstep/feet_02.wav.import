@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xd1y23h76756"
+path="res://.godot/imported/feet_02.wav-dc3bc5fd3584e70e1d6f2bd89b33683a.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/footstep/feet_02.wav"
+dest_files=["res://.godot/imported/feet_02.wav-dc3bc5fd3584e70e1d6f2bd89b33683a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

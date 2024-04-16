@@ -1,0 +1,246 @@
+[gd_scene load_steps=4 format=3 uid="uid://3n2i8830moac"]
+
+[ext_resource type="Theme" uid="uid://bn4fsgp7703ut" path="res://resources/ui/ui_theme.tres" id="1_5p63t"]
+[ext_resource type="Script" path="res://scenes/settings_menu.gd" id="2_by4gk"]
+[ext_resource type="Script" path="res://addons/label_font_auto_sizer/label_auto_sizer.gd" id="2_k6exu"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5p63t")
+script = ExtResource("2_by4gk")
+
+[node name="ResolutionsLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+offset_left = 576.0
+offset_top = 128.0
+offset_right = 962.0
+offset_bottom = 216.0
+theme_override_font_sizes/font_size = 72
+text = "Resolutions"
+horizontal_alignment = 1
+vertical_alignment = 3
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 72
+_current_font_size = 72
+_last_size_state = 1
+
+[node name="MarginContainerRes" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 192.0
+offset_right = 962.0
+offset_bottom = 643.0
+
+[node name="Resolutions" type="VBoxContainer" parent="MarginContainerRes"]
+layout_mode = 2
+
+[node name="4k" type="Button" parent="MarginContainerRes/Resolutions"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "3840x2160"
+
+[node name="1440" type="Button" parent="MarginContainerRes/Resolutions"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "2560x1440
+"
+
+[node name="1080p" type="Button" parent="MarginContainerRes/Resolutions"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "1920x1080
+"
+
+[node name="768p" type="Button" parent="MarginContainerRes/Resolutions"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "1366x768
+"
+
+[node name="720p" type="Button" parent="MarginContainerRes/Resolutions"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "1280x720
+"
+
+[node name="WindowModesLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+offset_left = 576.0
+offset_top = 656.0
+offset_right = 962.0
+offset_bottom = 744.0
+theme_override_font_sizes/font_size = 72
+text = "Window Mode"
+horizontal_alignment = 1
+vertical_alignment = 3
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 72
+_current_font_size = 72
+_last_size_state = 1
+
+[node name="MarginContainerWindowMode" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 720.0
+offset_right = 962.0
+offset_bottom = 1171.0
+
+[node name="WindowModes" type="VBoxContainer" parent="MarginContainerWindowMode"]
+layout_mode = 2
+
+[node name="windowed" type="Button" parent="MarginContainerWindowMode/WindowModes"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "Windowed"
+
+[node name="borderless" type="Button" parent="MarginContainerWindowMode/WindowModes"]
+layout_mode = 2
+theme_override_constants/h_separation = 35
+theme_override_font_sizes/font_size = 70
+text = "Borderless
+"
+clip_text = true
+
+[node name="VolumeLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+offset_left = 976.0
+offset_top = 128.0
+offset_right = 1362.0
+offset_bottom = 261.0
+theme_override_font_sizes/font_size = 72
+text = "Volume"
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 72
+_current_font_size = 72
+_last_size_state = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+offset_left = 976.0
+offset_top = 192.0
+offset_right = 1362.0
+offset_bottom = 448.0
+
+[node name="MarginContainerVolume" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 376.0
+offset_bottom = 300.0
+
+[node name="WindowModes" type="VBoxContainer" parent="Panel/MarginContainerVolume"]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="Panel/MarginContainerVolume/WindowModes"]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Master"
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 50
+_current_font_size = 50
+_last_size_state = 1
+
+[node name="MasterVolumeSlider" type="HSlider" parent="Panel/MarginContainerVolume/WindowModes"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="MusicLabel" type="Label" parent="Panel/MarginContainerVolume/WindowModes"]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = " Music"
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 56
+_current_font_size = 50
+_last_size_state = 1
+
+[node name="MusicVolumeSlider" type="HSlider" parent="Panel/MarginContainerVolume/WindowModes"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="SFXLabel" type="Label" parent="Panel/MarginContainerVolume/WindowModes"]
+custom_minimum_size = Vector2(100, 56.51)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "  Sound Effects"
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("2_k6exu")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 50
+_current_font_size = 50
+_last_size_state = 1
+
+[node name="SoundEffectVolumeSlider" type="HSlider" parent="Panel/MarginContainerVolume/WindowModes"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="BackToMainMenu" type="Button" parent="."]
+layout_mode = 2
+offset_left = 976.0
+offset_top = 560.0
+offset_right = 1362.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 70
+text = "Back to main menu"
+
+[node name="TestSfxButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 976.0
+offset_top = 461.0
+offset_right = 1362.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 70
+text = "Play sound effect"
+
+[connection signal="button_down" from="MarginContainerRes/Resolutions/4k" to="." method="_on_4k_button_down"]
+[connection signal="button_down" from="MarginContainerRes/Resolutions/1440" to="." method="_on_1440_button_down"]
+[connection signal="button_down" from="MarginContainerRes/Resolutions/1080p" to="." method="_on_1080p_button_down"]
+[connection signal="button_down" from="MarginContainerRes/Resolutions/768p" to="." method="_on_768p_button_down"]
+[connection signal="button_down" from="MarginContainerRes/Resolutions/720p" to="." method="_on_720p_button_down"]
+[connection signal="button_down" from="MarginContainerWindowMode/WindowModes/windowed" to="." method="_on_windowed_button_down"]
+[connection signal="button_down" from="MarginContainerWindowMode/WindowModes/borderless" to="." method="_on_borderless_button_down"]
+[connection signal="value_changed" from="Panel/MarginContainerVolume/WindowModes/MasterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="Panel/MarginContainerVolume/WindowModes/MusicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="Panel/MarginContainerVolume/WindowModes/SoundEffectVolumeSlider" to="." method="_on_sound_effect_volume_slider_value_changed"]
+[connection signal="button_down" from="BackToMainMenu" to="." method="_on_back_to_main_menu_button_down"]
+[connection signal="button_down" from="TestSfxButton" to="." method="_on_test_sfx_button_button_down"]

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://dgks2rk5wwv26"]
+
+[ext_resource type="Texture2D" uid="uid://b4vnguvp3k84g" path="res://thirdparty/sprites/shikashis-fantasy-icons-pack-v2/tex_apple.png" id="1_ql1tt"]
+[ext_resource type="Script" path="res://scripts/items/item_resource.gd" id="2_ymw8h"]
+
+[resource]
+script = ExtResource("2_ymw8h")
+id = 1
+name = "Apple"
+description = "A seemingly normal apple."
+type = 0
+rarity = 0
+icon = ExtResource("1_ql1tt")

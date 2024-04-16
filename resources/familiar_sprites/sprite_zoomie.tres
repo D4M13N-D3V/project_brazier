@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://bf87x86bnfxj2"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_jxbwp"]
+[ext_resource type="Texture2D" uid="uid://cjc547wmeq6v0" path="res://thirdparty/sprites/Animations/Shrieker Mushroom/ShriekerMushroomIdleSide.png" id="2_hpkqi"]
+
+[resource]
+script = ExtResource("1_jxbwp")
+sprite_texture = ExtResource("2_hpkqi")
+horizontal_frames = 4
+vertical_frames = 1

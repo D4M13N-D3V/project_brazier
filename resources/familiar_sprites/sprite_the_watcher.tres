@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://cplvwu5ls58mc"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_72cbc"]
+[ext_resource type="Texture2D" uid="uid://d1k4qihsg0km7" path="res://thirdparty/sprites/Animations/Bloodshot Eye/BloodshotEyeIdleSide.png" id="2_ve5h5"]
+
+[resource]
+script = ExtResource("1_72cbc")
+sprite_texture = ExtResource("2_ve5h5")
+horizontal_frames = 4
+vertical_frames = 1

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://dqwjhd1wagyf"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_g0u5e"]
+[ext_resource type="Texture2D" uid="uid://j0e6ui46hrv3" path="res://thirdparty/sprites/Animations/Ochre Jelly/OchreJellyIdleSide.png" id="2_8u1sq"]
+
+[resource]
+script = ExtResource("1_g0u5e")
+sprite_texture = ExtResource("2_8u1sq")
+horizontal_frames = 4
+vertical_frames = 1

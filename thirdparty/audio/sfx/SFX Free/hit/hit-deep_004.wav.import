@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c8tfh7755dfdg"
+path="res://.godot/imported/hit-deep_004.wav-848e484d7c3d3f53a8abfa6b1ba4b144.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/hit/hit-deep_004.wav"
+dest_files=["res://.godot/imported/hit-deep_004.wav-848e484d7c3d3f53a8abfa6b1ba4b144.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

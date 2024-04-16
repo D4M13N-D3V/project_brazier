@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://b7mhg28rs77ge"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_px74i"]
+
+[resource]
+script = ExtResource("1_px74i")
+id = 2
+name = "Fire III"
+damage = 10
+type = 1
+damage_type = 2
+description = "Deals 10 fire damage to target."
+source_animation = ""
+target_animation = ""

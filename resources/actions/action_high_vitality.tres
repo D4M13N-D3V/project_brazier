@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://bpd0qkt0tt0ta"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_sv1c1"]
+
+[resource]
+script = ExtResource("1_sv1c1")
+id = 6
+name = "High Vitality"
+damage = 25
+type = 0
+damage_type = 0
+description = "A extremely powerful healing incantation healing its target for 25 hp."
+source_animation = ""
+target_animation = ""

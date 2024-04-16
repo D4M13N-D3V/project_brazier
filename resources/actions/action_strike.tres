@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://c2kjo1wj418a7"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_070sf"]
+
+[resource]
+script = ExtResource("1_070sf")
+id = 15
+name = "Strike"
+damage = 10
+type = 1
+damage_type = 4
+description = "A fast strike catching your target off guard dealing 10 damage to the target."
+source_animation = ""
+target_animation = ""

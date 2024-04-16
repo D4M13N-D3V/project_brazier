@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpqjwfixw8hee"]
+
+[ext_resource type="Script" path="res://scripts/handlers/brazier_ui_item.gd" id="1_0463w"]
+[ext_resource type="Texture2D" uid="uid://d3gtwtbnk1qv0" path="res://addons/camera_2d_plus/images/node_icons/camera_2d_plus_icon.svg" id="2_8o821"]
+
+[node name="BrazierItem" type="Button" node_paths=PackedStringArray("label", "texture_rect")]
+custom_minimum_size = Vector2(125, 125)
+script = ExtResource("1_0463w")
+label = NodePath("Label")
+texture_rect = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 122.0
+texture = ExtResource("2_8o821")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 122.0
+offset_bottom = 23.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 14
+text = "Item Name x1"

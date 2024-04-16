@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwwoy6y6pi5d0"
+path="res://.godot/imported/magic_002.wav-c719d8eb2626beb1c4853e159e981dc4.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/magic/magic_002.wav"
+dest_files=["res://.godot/imported/magic_002.wav-c719d8eb2626beb1c4853e159e981dc4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

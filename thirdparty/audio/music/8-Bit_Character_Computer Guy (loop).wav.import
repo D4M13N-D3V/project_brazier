@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://e28ny6j06wg0"
+path="res://.godot/imported/8-Bit_Character_Computer Guy (loop).wav-b511cb64dfff5b5539767c4ded8ad872.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/music/8-Bit_Character_Computer Guy (loop).wav"
+dest_files=["res://.godot/imported/8-Bit_Character_Computer Guy (loop).wav-b511cb64dfff5b5539767c4ded8ad872.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwfbalg1uehfd"
+path="res://.godot/imported/explosion_quick_01.wav-5c009e5107788f1d3706f8ee68b0ead2.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/Explosion/explosion_quick_01.wav"
+dest_files=["res://.godot/imported/explosion_quick_01.wav-5c009e5107788f1d3706f8ee68b0ead2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

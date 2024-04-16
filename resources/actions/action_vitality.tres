@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://cp1p5v1legy53"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_1uxo1"]
+
+[resource]
+script = ExtResource("1_1uxo1")
+id = 5
+name = "Vitality"
+damage = 10
+type = 0
+damage_type = 0
+description = "A powerful healing incantation healing its target for 10 hp."
+source_animation = ""
+target_animation = ""

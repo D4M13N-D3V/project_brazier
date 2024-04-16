@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvxab7yum864m"
+path="res://.godot/imported/hurt_005.wav-ebaf6e456c87650c732ccc9b103f8753.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/hurt/hurt_005.wav"
+dest_files=["res://.godot/imported/hurt_005.wav-ebaf6e456c87650c732ccc9b103f8753.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

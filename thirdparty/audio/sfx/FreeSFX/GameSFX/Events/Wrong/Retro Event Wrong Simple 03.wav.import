@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bdq0fdnnp8x0w"
+path="res://.godot/imported/Retro Event Wrong Simple 03.wav-a2cf6b217f3cf4187dc2e4315c078f95.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/FreeSFX/GameSFX/Events/Wrong/Retro Event Wrong Simple 03.wav"
+dest_files=["res://.godot/imported/Retro Event Wrong Simple 03.wav-a2cf6b217f3cf4187dc2e4315c078f95.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

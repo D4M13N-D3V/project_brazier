@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="LootTableResource" load_steps=4 format=3 uid="uid://dypkw0407i7i"]
+
+[ext_resource type="Script" path="res://scripts/items/loot_table_resource.gd" id="1_5lvhp"]
+[ext_resource type="Script" path="res://scripts/items/recipie_item_resource.gd" id="1_l145q"]
+
+[sub_resource type="Resource" id="Resource_mws70"]
+script = ExtResource("1_l145q")
+item_id = 0
+item_count = 10
+
+[resource]
+script = ExtResource("1_5lvhp")
+id = 2
+items = Array[ExtResource("1_l145q")]([SubResource("Resource_mws70")])

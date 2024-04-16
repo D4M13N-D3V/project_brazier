@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2vq4dnu1g2s4"
+path="res://.godot/imported/8-Bit_Character_Mad But Cool Scientist (loop).wav-0e95f2e195cc8fb971cc48e33c7dacb8.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/music/8-Bit_Character_Mad But Cool Scientist (loop).wav"
+dest_files=["res://.godot/imported/8-Bit_Character_Mad But Cool Scientist (loop).wav-0e95f2e195cc8fb971cc48e33c7dacb8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

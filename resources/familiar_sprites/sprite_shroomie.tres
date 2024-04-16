@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://00476f7hg7iv"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_p7d4m"]
+[ext_resource type="Texture2D" uid="uid://c8ritkup1502r" path="res://thirdparty/sprites/Animations/Red Cap/RedCapIdleSide.png" id="2_s5aaw"]
+
+[resource]
+script = ExtResource("1_p7d4m")
+sprite_texture = ExtResource("2_s5aaw")
+horizontal_frames = 4
+vertical_frames = 1

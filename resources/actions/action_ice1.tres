@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://dhoiwqj7yfk7u"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_ngvad"]
+
+[resource]
+script = ExtResource("1_ngvad")
+id = 11
+name = "Ice I"
+damage = 3
+type = 1
+damage_type = 3
+description = "Deals 3 Ice damage to target."
+source_animation = ""
+target_animation = ""

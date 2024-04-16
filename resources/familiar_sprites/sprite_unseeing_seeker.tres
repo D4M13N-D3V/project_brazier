@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://csb25m08pq5iu"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_s11bm"]
+[ext_resource type="Texture2D" uid="uid://csplcggm12lk1" path="res://thirdparty/sprites/Animations/Blinded Grimlock/BlindedGrimlockIdleSide.png" id="2_6a2ed"]
+
+[resource]
+script = ExtResource("1_s11bm")
+sprite_texture = ExtResource("2_6a2ed")
+horizontal_frames = 4
+vertical_frames = 1

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FamiliarResource" load_steps=5 format=3 uid="uid://ddhyfjuuvatnm"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_resource.gd" id="1_sgkop"]
+[ext_resource type="Script" path="res://scripts/items/recipie_item_resource.gd" id="1_tl8wt"]
+[ext_resource type="Resource" uid="uid://c4ty8sh0wh6rg" path="res://resources/familiar_sprites/sprite_slime.tres" id="2_f6a3l"]
+
+[sub_resource type="Resource" id="Resource_p4iyw"]
+script = ExtResource("1_tl8wt")
+item_id = 0
+item_count = 1
+
+[resource]
+script = ExtResource("1_sgkop")
+id = 0
+name = "Slime"
+description = "A gelatinous mass composed of a substance that appears to slowly digest anything it touches."
+level = 1
+health = 10
+level_required = 1
+familiar_type = 0
+sprite_resource = ExtResource("2_f6a3l")
+required_items = Array[ExtResource("1_tl8wt")]([SubResource("Resource_p4iyw")])
+available_actions = Array[int]([14])
+loot_table_id = 0

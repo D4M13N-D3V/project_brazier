@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqyx45m3j6vpy"
+path="res://.godot/imported/8-Bit_Character_Distant Memory Of A Friend (loop).wav-225fa5f1cfee3dec3a8f0fa84546c1a0.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/music/8-Bit_Character_Distant Memory Of A Friend (loop).wav"
+dest_files=["res://.godot/imported/8-Bit_Character_Distant Memory Of A Friend (loop).wav-225fa5f1cfee3dec3a8f0fa84546c1a0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

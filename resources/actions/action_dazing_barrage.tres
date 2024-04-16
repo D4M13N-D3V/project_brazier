@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://caehf00tywo7s"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_nuqwg"]
+
+[resource]
+script = ExtResource("1_nuqwg")
+id = 16
+name = "Dazing Barrage"
+damage = 50
+type = 1
+damage_type = 4
+description = "You overwhelm the target with a barrage of dazing but powerful blows dealing 50 damage to them."
+source_animation = ""
+target_animation = ""

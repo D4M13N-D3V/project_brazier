@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciai11neq8pc5"]
+
+[ext_resource type="Script" path="res://scripts/items/loot_table_debug.gd" id="1_yii7i"]
+
+[node name="LootTableDebug" type="Node2D"]
+script = ExtResource("1_yii7i")

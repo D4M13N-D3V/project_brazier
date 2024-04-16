@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="FamiliarResource" load_steps=6 format=3 uid="uid://b0eg2a2k1dpt1"]
+
+[ext_resource type="Script" path="res://scripts/items/recipie_item_resource.gd" id="1_53rxe"]
+[ext_resource type="Script" path="res://scripts/familiars/familiar_resource.gd" id="1_th26o"]
+[ext_resource type="Resource" uid="uid://bg1t6lar378dq" path="res://resources/familiar_sprites/sprite_acid_slime.tres" id="2_rs7da"]
+
+[sub_resource type="Resource" id="Resource_2su5v"]
+script = ExtResource("1_53rxe")
+item_id = 0
+item_count = 3
+
+[sub_resource type="Resource" id="Resource_tbd1r"]
+script = ExtResource("1_53rxe")
+item_id = 1
+item_count = 3
+
+[resource]
+script = ExtResource("1_th26o")
+id = 1
+name = "Acid Slime"
+description = "A acidic gelatinous mass composed of a substance that appears to quickly melts anything it touches."
+level = 2
+health = 20
+level_required = 2
+familiar_type = 0
+sprite_resource = ExtResource("2_rs7da")
+required_items = Array[ExtResource("1_53rxe")]([SubResource("Resource_2su5v"), SubResource("Resource_tbd1r")])
+available_actions = Array[int]([9, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+loot_table_id = 1

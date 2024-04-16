@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://xojya4h5msc6"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_32env"]
+
+[resource]
+script = ExtResource("1_32env")
+id = 7
+name = "Umbral Death"
+damage = 50
+type = 1
+damage_type = 1
+description = "The channeling of powerful abyssal energy causing 50 dark damage, forcing the target ever more towards the darkest death."
+source_animation = ""
+target_animation = ""

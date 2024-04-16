@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://bfk45dngoammm"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_vc3da"]
+[ext_resource type="Texture2D" uid="uid://6iibn7bo6a1j" path="res://thirdparty/sprites/Animations/Brawny Ogre/BrawnyOgreIdleSide.png" id="2_m0pmn"]
+
+[resource]
+script = ExtResource("1_vc3da")
+sprite_texture = ExtResource("2_m0pmn")
+horizontal_frames = 4
+vertical_frames = 1

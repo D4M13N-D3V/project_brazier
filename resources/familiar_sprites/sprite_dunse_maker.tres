@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://ca50h5u480b1g"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_6ilxv"]
+[ext_resource type="Texture2D" uid="uid://dpnryp6dle7pl" path="res://thirdparty/sprites/Animations/Intellect Devourer/IntellectDevourerIdleSide.png" id="2_fo24b"]
+
+[resource]
+script = ExtResource("1_6ilxv")
+sprite_texture = ExtResource("2_fo24b")
+horizontal_frames = 4
+vertical_frames = 1

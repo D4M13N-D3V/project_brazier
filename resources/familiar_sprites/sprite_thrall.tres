@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://cm63yicqkemri"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_wrvt6"]
+[ext_resource type="Texture2D" uid="uid://bnm585rpfeoj" path="res://thirdparty/sprites/Animations/Murky Slaad/MurkySlaadIdleSide.png" id="2_ie7nh"]
+
+[resource]
+script = ExtResource("1_wrvt6")
+sprite_texture = ExtResource("2_ie7nh")
+horizontal_frames = 4
+vertical_frames = 1

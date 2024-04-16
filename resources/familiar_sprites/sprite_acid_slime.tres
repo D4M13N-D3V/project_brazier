@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://bg1t6lar378dq"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_dm3b3"]
+[ext_resource type="Texture2D" uid="uid://bbwcfnqlq4x53" path="res://thirdparty/sprites/Animations/Acid Ooze/AcidOozeIdleSide.png" id="2_sbkyk"]
+
+[resource]
+script = ExtResource("1_dm3b3")
+sprite_texture = ExtResource("2_sbkyk")
+horizontal_frames = 4
+vertical_frames = 1

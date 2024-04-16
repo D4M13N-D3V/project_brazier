@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkwttm8p04qds"]
+
+[ext_resource type="Script" path="res://scripts/debug/action_debug.gd" id="1_o2pom"]
+
+[node name="ActionDebug" type="Node2D"]
+script = ExtResource("1_o2pom")

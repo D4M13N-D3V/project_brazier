@@ -1,0 +1,256 @@
+[gd_scene load_steps=19 format=3 uid="uid://kh4eq5pm0q48"]
+
+[ext_resource type="Script" path="res://scripts/managers/game_manager.gd" id="1_ebsd1"]
+[ext_resource type="Script" path="res://scripts/handlers/brazier_ui_handler.gd" id="2_bf7d2"]
+[ext_resource type="Script" path="res://scripts/items/recipie_item_resource.gd" id="2_qt3ar"]
+[ext_resource type="Script" path="res://addons/SmoothScroll/SmoothScrollContainer.gd" id="3_qrcfg"]
+[ext_resource type="Theme" uid="uid://bn4fsgp7703ut" path="res://resources/ui/ui_theme.tres" id="3_vmbbe"]
+[ext_resource type="Script" path="res://addons/SmoothScroll/scroll_damper/expo_scroll_damper.gd" id="4_bfy6i"]
+[ext_resource type="Script" path="res://scripts/handlers/combat_ui_handler.gd" id="4_eu26r"]
+[ext_resource type="PackedScene" uid="uid://77h5o71l85y5" path="res://scenes/displays/familiar_sprite_display.tscn" id="5_uqbyx"]
+[ext_resource type="Script" path="res://addons/label_font_auto_sizer/label_auto_sizer.gd" id="5_wmj2v"]
+
+[sub_resource type="Resource" id="Resource_v6o2n"]
+script = ExtResource("2_qt3ar")
+item_id = 0
+item_count = 10
+item_chance = 99
+
+[sub_resource type="Resource" id="Resource_my5jr"]
+script = ExtResource("4_bfy6i")
+friction = 4.0
+minimum_velocity = 0.4
+rebound_strength = 7.0
+
+[sub_resource type="Resource" id="Resource_iqlyl"]
+script = ExtResource("4_bfy6i")
+friction = 4.0
+minimum_velocity = 0.4
+rebound_strength = 7.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_klfxy"]
+line_spacing = 1.0
+font_size = 50
+
+[sub_resource type="Resource" id="Resource_g2h61"]
+script = ExtResource("4_bfy6i")
+friction = 4.0
+minimum_velocity = 0.4
+rebound_strength = 7.0
+
+[sub_resource type="Resource" id="Resource_5ehgn"]
+script = ExtResource("4_bfy6i")
+friction = 4.0
+minimum_velocity = 0.4
+rebound_strength = 7.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w05nx"]
+bg_color = Color(0.164706, 0.0705882, 0.0784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uta4o"]
+bg_color = Color(0.737255, 0.788235, 0.431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k26h7"]
+bg_color = Color(0.607843, 0.25098, 0.243137, 1)
+
+[node name="MainGameScene" type="Node2D"]
+
+[node name="GameManager" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_ebsd1")
+starting_items = Array[ExtResource("2_qt3ar")]([SubResource("Resource_v6o2n")])
+
+[node name="CombatScreen" type="Node2D" parent="GameManager"]
+
+[node name="BrazierUI" type="Control" parent="GameManager/CombatScreen"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 41.0
+offset_bottom = 39.0
+script = ExtResource("2_bf7d2")
+
+[node name="Sprite2D" type="Sprite2D" parent="GameManager/CombatScreen/BrazierUI"]
+
+[node name="BrazierItems" type="Panel" parent="GameManager/CombatScreen/BrazierUI"]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 32.0
+offset_right = 1378.0
+offset_bottom = 427.0
+
+[node name="BrazierItemsContainer" type="GridContainer" parent="GameManager/CombatScreen/BrazierUI/BrazierItems"]
+custom_minimum_size = Vector2(15, 2.08165e-12)
+layout_mode = 0
+offset_right = 850.0
+offset_bottom = 394.0
+columns = 8
+
+[node name="PlayerItems" type="Panel" parent="GameManager/CombatScreen/BrazierUI"]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 621.0
+offset_right = 1377.0
+offset_bottom = 1016.0
+
+[node name="PlayerItemsContainer" type="GridContainer" parent="GameManager/CombatScreen/BrazierUI/PlayerItems"]
+custom_minimum_size = Vector2(15, 2.08165e-12)
+layout_mode = 0
+offset_right = 850.0
+offset_bottom = 394.0
+columns = 8
+
+[node name="LightBrazierButton" type="Button" parent="GameManager/CombatScreen/BrazierUI"]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 516.0
+offset_right = 1096.0
+offset_bottom = 584.0
+theme_override_font_sizes/font_size = 25
+text = "Light Brazier"
+
+[node name="StartFightButton" type="Button" parent="GameManager/CombatScreen/BrazierUI"]
+visible = false
+layout_mode = 0
+offset_left = 800.0
+offset_top = 516.0
+offset_right = 1096.0
+offset_bottom = 584.0
+theme_override_font_sizes/font_size = 25
+text = "Start Fight"
+
+[node name="BrazierLabel" type="Label" parent="GameManager/CombatScreen/BrazierUI"]
+layout_mode = 0
+offset_left = 789.0
+offset_top = 450.0
+offset_right = 1113.0
+offset_bottom = 507.0
+theme_override_font_sizes/font_size = 41
+text = "PLAYER BRAZIER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CombatUI" type="Control" parent="GameManager/CombatScreen"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_vmbbe")
+script = ExtResource("4_eu26r")
+
+[node name="PlayerFamiliarCombatDisplay" parent="GameManager/CombatScreen/CombatUI" instance=ExtResource("5_uqbyx")]
+unique_name_in_owner = true
+position = Vector2(328, 456)
+scale = Vector2(24, 24)
+
+[node name="EnemyFamiliarCombatDisplay" parent="GameManager/CombatScreen/CombatUI" instance=ExtResource("5_uqbyx")]
+unique_name_in_owner = true
+position = Vector2(1584, 456)
+scale = Vector2(24, 24)
+flip_h = true
+
+[node name="ActionDescriptionPanel" type="Panel" parent="GameManager/CombatScreen/CombatUI"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 848.0
+offset_top = 760.0
+offset_right = 1720.0
+offset_bottom = 1024.0
+
+[node name="MarginContainer" type="MarginContainer" parent="GameManager/CombatScreen/CombatUI/ActionDescriptionPanel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 40.0
+offset_right = 859.345
+offset_bottom = 224.0
+
+[node name="SmoothScrollContainer" type="ScrollContainer" parent="GameManager/CombatScreen/CombatUI/ActionDescriptionPanel/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+script = ExtResource("3_qrcfg")
+wheel_scroll_damper = SubResource("Resource_my5jr")
+dragging_scroll_damper = SubResource("Resource_iqlyl")
+
+[node name="ActionToolTipLbl" type="Label" parent="GameManager/CombatScreen/CombatUI/ActionDescriptionPanel/MarginContainer/SmoothScrollContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(827.345, 180.435)
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 26
+label_settings = SubResource("LabelSettings_klfxy")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("5_wmj2v")
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 50
+_current_font_size = 50
+_last_size_state = 1
+
+[node name="ActionsPanel" type="Panel" parent="GameManager/CombatScreen/CombatUI"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 728.0
+offset_right = 1776.0
+offset_bottom = 1056.0
+
+[node name="ActionMarginContainer" type="MarginContainer" parent="GameManager/CombatScreen/CombatUI/ActionsPanel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 680.0
+offset_bottom = 304.0
+theme = ExtResource("3_vmbbe")
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ActionSmoothScrollContainer" type="ScrollContainer" parent="GameManager/CombatScreen/CombatUI/ActionsPanel/ActionMarginContainer"]
+layout_mode = 2
+script = ExtResource("3_qrcfg")
+wheel_scroll_damper = SubResource("Resource_g2h61")
+dragging_scroll_damper = SubResource("Resource_5ehgn")
+drag_with_mouse = false
+drag_with_touch = false
+
+[node name="ActionGridContainer" type="GridContainer" parent="GameManager/CombatScreen/CombatUI/ActionsPanel/ActionMarginContainer/ActionSmoothScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameManager/CombatScreen/CombatUI"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 72.0
+offset_right = 1776.0
+offset_bottom = 128.0
+theme_override_constants/separation = 200
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="GameManager/CombatScreen/CombatUI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_w05nx")
+theme_override_styles/fill = SubResource("StyleBoxFlat_uta4o")
+show_percentage = false
+
+[node name="EnemyHealthBar" type="ProgressBar" parent="GameManager/CombatScreen/CombatUI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_w05nx")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k26h7")
+max_value = 10.0
+value = 10.0
+show_percentage = false
+
+[connection signal="encounter_begin" from="GameManager" to="GameManager/CombatScreen/CombatUI" method="_on_game_manager_encounter_begin"]

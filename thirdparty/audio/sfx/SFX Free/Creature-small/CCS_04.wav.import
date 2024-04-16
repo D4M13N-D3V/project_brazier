@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dk8p74mdqngi6"
+path="res://.godot/imported/CCS_04.wav-df89ff9fa6a00c49d3e211c9dda10f3f.sample"
+
+[deps]
+
+source_file="res://thirdparty/audio/sfx/SFX Free/Creature-small/CCS_04.wav"
+dest_files=["res://.godot/imported/CCS_04.wav-df89ff9fa6a00c49d3e211c9dda10f3f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

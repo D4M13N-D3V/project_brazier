@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://hy5mljiwpmtc"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_smfd4"]
+
+[resource]
+script = ExtResource("1_smfd4")
+id = 10
+name = "Freeze"
+damage = 5
+type = 0
+damage_type = 3
+description = "You freeze your wounds, providing a small but needed heal of 5hp."
+source_animation = ""
+target_animation = ""

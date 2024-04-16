@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://cy5uj2qhcb6s0"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_teedu"]
+[ext_resource type="Texture2D" uid="uid://okmnj64eixhs" path="res://thirdparty/sprites/Animations/Wretched Fomorian/WretchedFomorianIdleSide.png" id="2_dyda2"]
+
+[resource]
+script = ExtResource("1_teedu")
+sprite_texture = ExtResource("2_dyda2")
+horizontal_frames = 4
+vertical_frames = 1

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://77h5o71l85y5"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_display.gd" id="1_xa4ia"]
+
+[node name="FamiliarSpriteDisplay" type="Sprite2D"]
+position = Vector2(960, 540)
+scale = Vector2(32, 32)
+script = ExtResource("1_xa4ia")
+frame_time = 0.3

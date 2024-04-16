@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://c470pd0nr7iij"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_uq5qn"]
+[ext_resource type="Texture2D" uid="uid://cxaxa5r6nvy4e" path="res://thirdparty/sprites/Animations/Death Slime/DeathSlimeIdleSide.png" id="2_unqeh"]
+
+[resource]
+script = ExtResource("1_uq5qn")
+sprite_texture = ExtResource("2_unqeh")
+horizontal_frames = 4
+vertical_frames = 1

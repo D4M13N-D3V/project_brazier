@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://b8cdx5tb812y"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_3r0yd"]
+[ext_resource type="Texture2D" uid="uid://nmv01w88kim6" path="res://thirdparty/sprites/Animations/Crushing Cyclops/CrushingCyclopsIdleSide.png" id="2_136xl"]
+
+[resource]
+script = ExtResource("1_3r0yd")
+sprite_texture = ExtResource("2_136xl")
+horizontal_frames = 4
+vertical_frames = 1

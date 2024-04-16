@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://do27bf7vn8m3d"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_ncncv"]
+[ext_resource type="Texture2D" uid="uid://biomfspaoryad" path="res://thirdparty/sprites/Animations/Clawing Harpy/ClawingHarpyIdleSide.png" id="2_p1t5h"]
+
+[resource]
+script = ExtResource("1_ncncv")
+sprite_texture = ExtResource("2_p1t5h")
+horizontal_frames = 4
+vertical_frames = 1

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://b4kuys6vk4366"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_3a1rp"]
+
+[resource]
+script = ExtResource("1_3a1rp")
+id = 14
+name = "Slash"
+damage = 20
+type = 1
+damage_type = 4
+description = "A basic slash dealing 3 damage to the target."
+source_animation = ""
+target_animation = ""

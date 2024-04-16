@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FamiliarResource" load_steps=5 format=3 uid="uid://pvfsg2fycr12"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_resource.gd" id="1_tlkb3"]
+[ext_resource type="Script" path="res://scripts/items/recipie_item_resource.gd" id="1_y3caa"]
+[ext_resource type="Resource" uid="uid://b8cdx5tb812y" path="res://resources/familiar_sprites/sprite_bob_the_cyclopse.tres" id="2_abmuu"]
+
+[sub_resource type="Resource" id="Resource_58ob3"]
+script = ExtResource("1_y3caa")
+item_id = 1
+item_count = 1
+
+[resource]
+script = ExtResource("1_tlkb3")
+id = 2
+name = "Bob the cyclopse"
+description = "It's Bob!
+he seems confused as to the current situation almost as if he was plucked right from a nice picnic he was having or something."
+level = 3
+health = 50
+level_required = 4
+familiar_type = 0
+sprite_resource = ExtResource("2_abmuu")
+required_items = Array[ExtResource("1_y3caa")]([SubResource("Resource_58ob3")])
+available_actions = Array[int]([9, 14])
+loot_table_id = 1

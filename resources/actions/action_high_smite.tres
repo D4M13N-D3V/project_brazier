@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://citpl65utup0y"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_xrskn"]
+
+[resource]
+script = ExtResource("1_xrskn")
+id = 4
+name = "High Smite"
+damage = 20
+type = 1
+damage_type = 0
+description = "A extremely powerful holy blow dealing 20 holy damage, as if the gods themselves delt it."
+source_animation = ""
+target_animation = ""

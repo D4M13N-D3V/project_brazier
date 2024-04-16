@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://cdkyqcr0ob3i2"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_khgs7"]
+
+[resource]
+script = ExtResource("1_khgs7")
+id = 9
+name = "Necrosis"
+damage = 5
+type = 1
+damage_type = 1
+description = "A terrible curse that turns your target's skin to necrosis, causing 5 dark damage."
+source_animation = ""
+target_animation = ""

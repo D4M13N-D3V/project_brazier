@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcltqso88s1ke"]
+
+[ext_resource type="Script" path="res://scripts/components/action_button.gd" id="1_shjdf"]
+[ext_resource type="FontFile" uid="uid://bqqmdd2oc78gw" path="res://thirdparty/font/Silver.ttf" id="2_am3o8"]
+[ext_resource type="Script" path="res://addons/label_font_auto_sizer/label_auto_sizer.gd" id="3_8bmhd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xdbq4"]
+font = ExtResource("2_am3o8")
+font_size = 44
+
+[node name="ActionButton" type="Button"]
+custom_minimum_size = Vector2(300, 120)
+mouse_filter = 1
+theme_override_font_sizes/font_size = 100
+clip_text = true
+script = ExtResource("1_shjdf")
+
+[node name="LabelAutoSizer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 288.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 16
+text = "this is a thing about"
+label_settings = SubResource("LabelSettings_xdbq4")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+script = ExtResource("3_8bmhd")
+_max_steps = 100
+_size_just_modified_by_autosizer = false
+_set_defaults = true
+_base_font_size = 44
+_current_font_size = 44
+_last_size_state = 1

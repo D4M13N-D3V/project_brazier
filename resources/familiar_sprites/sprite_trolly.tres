@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FamiliarSpriteResource" load_steps=3 format=3 uid="uid://bk646x7gpp35b"]
+
+[ext_resource type="Script" path="res://scripts/familiars/familiar_sprite_resource.gd" id="1_m22h0"]
+[ext_resource type="Texture2D" uid="uid://dmd36w54vdv4h" path="res://thirdparty/sprites/Animations/Storm Giant/StormGiantIdleSide.png" id="2_riyrc"]
+
+[resource]
+script = ExtResource("1_m22h0")
+sprite_texture = ExtResource("2_riyrc")
+horizontal_frames = 8
+vertical_frames = 1

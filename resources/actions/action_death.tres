@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=2 format=3 uid="uid://k0t4ps0ah0qb"]
+
+[ext_resource type="Script" path="res://scripts/actions/action_resouce.gd" id="1_ch76e"]
+
+[resource]
+script = ExtResource("1_ch76e")
+id = 8
+name = "Death"
+damage = 15
+type = 1
+damage_type = 1
+description = "A curse you place on your target deaing 15 dark damage."
+source_animation = ""
+target_animation = ""

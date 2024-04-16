@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://b7xv56uxailts"]
+
+[ext_resource type="Texture2D" uid="uid://cehieqicp88ho" path="res://thirdparty/sprites/shikashis-fantasy-icons-pack-v2/tex_bottled_goo.png" id="1_22hof"]
+[ext_resource type="Script" path="res://scripts/items/item_resource.gd" id="1_u06g1"]
+
+[resource]
+script = ExtResource("1_u06g1")
+id = 0
+name = "Bottle of Goo"
+description = "A gross green slimey substance."
+type = 0
+rarity = 0
+icon = ExtResource("1_22hof")
