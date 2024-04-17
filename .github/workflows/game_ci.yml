@@ -26,14 +26,6 @@ jobs:
           apt-get install git-lfs
           git lfs install
 
-      - name: Configure Git LFS
-        run: |
-          git lfs track "*.pck"
-          git add .gitattributes
-          git commit -m "Configure Git LFS"
-          git push origin HEAD:main
-
-
       - name: Move export templates into position
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates
