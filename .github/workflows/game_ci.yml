@@ -18,15 +18,9 @@ jobs:
       image: barichello/godot-ci:4.2.1
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Install Git LFS
-        run: |
-          apt-get update
-          apt-get install git-lfs
-          git lfs install
-          git config --global --add safe.directory /__w/project_brazier/project_brazier
-          git lfs track ".pck"
+          uses: actions/checkout@v3
+          with:
+            lfs: true
 
       - name: Move export templates into position
         run: |
