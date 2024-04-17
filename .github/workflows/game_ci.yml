@@ -20,6 +20,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install Git LFS
+        run: |
+          sudo apt-get update
+          sudo apt-get install git-lfs
+          git lfs install
+
+      - name: Configure Git LFS
+        run: |
+          git lfs track "*.zip"
+          git add .gitattributes
+          git commit -m "Configure Git LFS"
+          git push origin HEAD:main
+
+
       - name: Move export templates into position
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates
