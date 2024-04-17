@@ -25,6 +25,7 @@ jobs:
           apt-get update
           apt-get install git-lfs
           git lfs install
+          git lfs track ".pck"
 
       - name: Move export templates into position
         run: |
