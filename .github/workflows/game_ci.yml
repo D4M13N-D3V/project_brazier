@@ -25,6 +25,7 @@ jobs:
           apt-get update
           apt-get install git-lfs
           git lfs install
+          git config --global --add safe.directory /__w/project_brazier/project_brazier
           git lfs track ".pck"
 
       - name: Move export templates into position
