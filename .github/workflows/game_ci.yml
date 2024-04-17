@@ -22,6 +22,14 @@ jobs:
           with:
             lfs: true
 
+        - name: Install Git LFS
+          run: |
+            apt-get update
+            apt-get install git-lfs
+            git lfs install
+            git config --global --add safe.directory /__w/project_brazier/project_brazier
+            git lfs track ".pck"
+
       - name: Move export templates into position
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates
